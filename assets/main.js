@@ -10,11 +10,7 @@
       const em = form.querySelector('[name=email]').value.trim();
       const msg = form.querySelector('[name=message]').value.trim();
       const subject = encodeURIComponent('Consulting inquiry from ' + (n || 'Website'));
-      const body = encodeURIComponent('Name: ' + n + '
-Email: ' + em + '
-
-Message:
-' + msg);
+      const body = encodeURIComponent('Name: ' + n + '\nEmail: ' + em + '\n\nMessage:\n' + msg);
       window.location.href = 'mailto:solutionsfirstconsult@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
